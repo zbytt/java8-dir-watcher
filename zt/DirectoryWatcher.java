@@ -18,7 +18,7 @@ public final class DirectoryWatcher {
     private volatile boolean stopped;
 
     public DirectoryWatcher(@NotNull String dirPath) throws IOException {
-        if (dirPath == null || (dirPath!=null && dirPath.isEmpty()))
+        if (dirPath == null ||  dirPath.isEmpty())
             throw new IOException("Path can't be empty");
 
         this.path = Paths.get(dirPath);
